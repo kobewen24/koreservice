@@ -92,7 +92,7 @@ public class KoreAIController{
 			   }
 			   break;
 		   case "action_get_item_detail":
-			   jsonNode = new ObjectMapper().readValue(itempickerResponse, JsonNode.class);
+			   jsonNode = new ObjectMapper().readValue(itemDetailResponse, JsonNode.class);
 			   break;
 		   case "action_ifd_check_case_status":
 			   jsonNode = new ObjectMapper().readValue(ifdContent, JsonNode.class);
