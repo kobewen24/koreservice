@@ -87,6 +87,8 @@ public class KoreAIController{
 			   String docId = request.getPayload().getDocId();
 			   if(docId.equalsIgnoreCase("BOTC1099")) {
 				   jsonNode = new ObjectMapper().readValue(noItemsContent, JsonNode.class);
+			   }else if(docId.equalsIgnoreCase("BOTC1480")) {
+				   jsonNode = new ObjectMapper().readValue(itemWithoutCaseBuyer, JsonNode.class);
 			   }
 			   break;
 		   case "action_get_item_detail":
